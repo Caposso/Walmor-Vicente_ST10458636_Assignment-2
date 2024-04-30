@@ -11,9 +11,9 @@ class Game : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game)
 
-        val textEat = Int
-        val textBath = Int
-        val textJoy = Int
+        var textEat = 0
+        var textBath = 0
+        var textContent = 0
         val textHunger = findViewById<TextView>(R.id.textHunger)
         val textClean = findViewById<TextView>(R.id.textClean)
         val textHappy = findViewById<TextView>(R.id.textHappy)
@@ -23,21 +23,25 @@ class Game : AppCompatActivity() {
         val play = findViewById<Button>(R.id.playButton)
 
         feed.setOnClickListener {
+            if (textEat < 10) {
+                textEat++
+            }
             image.setImageResource(R.drawable.feed)
-
-
-
-
+            textHunger.text = textEat.toString()
         }
         clean.setOnClickListener {
+            if (textBath < 10) {
+                textBath++
+            }
             image.setImageResource(R.drawable.clean)
-
-
+            textClean.text = textBath.toString()
         }
         play.setOnClickListener {
+            if (textContent < 10) {
+                textContent++
+            }
             image.setImageResource(R.drawable.play)
-
-
+            textHappy.text = textContent.toString()
         }
     }
 }
