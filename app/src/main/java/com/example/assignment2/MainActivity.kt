@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
 
         // Declare the Variable
         val button = findViewById<Button>(R.id.button)
-        // Set button On Click Listener
+        // Set button On Click Listener. When clicked is going to lead us to the other page
         button.setOnClickListener {
             // Create the explicit intent
             val intent = Intent(this, Game::class.java)
