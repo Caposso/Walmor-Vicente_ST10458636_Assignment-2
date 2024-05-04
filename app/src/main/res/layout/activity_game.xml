@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:background="@drawable/_19pikbestruh_png_sw800">
 
     <ImageView
         android:id="@+id/imageView2"
+        android:layout_width="253dp"
+        android:layout_height="257dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.474"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.198"
-        app:srcCompat="@drawable/cute"
-        android:layout_width="253dp"
-        android:layout_height="257dp"
-        tools:layout_editor_absoluteX="79dp"
-        tools:layout_editor_absoluteY="187dp" />
+        app:srcCompat="@drawable/doggggg" />
 
     <Button
         android:id="@+id/feedButton"
@@ -58,6 +57,7 @@
         android:layout_height="45dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="80dp"
+        android:background="#81ED7E09"
         android:text="@string/Hunger"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -70,6 +70,7 @@
         android:layout_height="45dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="30dp"
+        android:background="#81ED7E09"
         android:text="@string/clean"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -82,6 +83,7 @@
         android:layout_height="42dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="30dp"
+        android:background="#81ED7E09"
         android:text="@string/Happy"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -94,6 +96,10 @@
         android:layout_height="39dp"
         android:layout_marginTop="80dp"
         android:layout_marginEnd="40dp"
+        android:background="#81ED7E09"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/playButton" />
 
@@ -103,6 +109,10 @@
         android:layout_height="39dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="40dp"
+        android:background="#81ED7E09"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textHunger" />
 
@@ -112,6 +122,10 @@
         android:layout_height="39dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="40dp"
+        android:background="#81ED7E09"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textClean" />
 
